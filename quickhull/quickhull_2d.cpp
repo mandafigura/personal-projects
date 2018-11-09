@@ -15,7 +15,7 @@
 #include<cstdlib>
 #include<cstdio>
 #include<vector> //std::vector
-#include<algorithm> //random_shuffle e sort
+#include<algorithm> //sort algorithm
 #include<cmath> //sqrt
 
 using namespace std; //std::
@@ -41,8 +41,8 @@ void get_input(vector<Point> &p){
     //fill the vector from a input file (syntax of a line: double double)
     do{
         fscanf(stdin, "%lf", &aux.x); //reads double
-		getc(stdin); //skips a single char (space)
-		fscanf(stdin, "%lf", &aux.y); //reads double
+	getc(stdin); //skips a single char (space)
+	fscanf(stdin, "%lf", &aux.y); //reads double
         p.push_back(aux);
     }while(getc(stdin) != EOF); //reads until end of file
 }
@@ -54,7 +54,6 @@ void print_vector_of_points(vector<Point> &p){
 	cout << "=================================\n";
 }
 /*-------------------------------------------------------------*/
-
 
 
 /*--------------------- Point operations ----------------------*/
@@ -102,17 +101,10 @@ double line_distance(Point a, Point p1, Point p2){
 /*-------------------------------------------------------------*/
 
 
-
 /*-------------------- auxiliary functions --------------------*/
 // says if a point a is at the left side, right side or ir colinear to the oriented line p1->p2
 // see references (2)
 int set_local(Point a, Point p1, Point p2){
-	//defines the line equation: a*x + b = y
-	//double a = (p2.y - p1.y)/(p2.x - p1.x);
-	//double b = p1.y - ((p1.x)*a);
-	//calculates the equation value at point c
-	//double position = ((a*c.x) - (c.y) + b);
-
 	//calculates:	p1->p2 x p1->a (the cross product between the vectors)
 	double position = cross_product((vector_sum(p2,scalar_product(-1,p1))),(vector_sum(a,scalar_product(-1,p1))));
 	if(position > 0){
@@ -140,10 +132,8 @@ Point farthest_point(vector<Point> S, Point p1, Point p2){
 }
 
 //find the set of points at the left side of a line (defined by two points)
-//also tells if there are colinear points that should be in the convex hull (true)
 void find_left_set(vector<Point> P, vector<Point>& S, Point p1, Point p2){
 	int flag;
-
 	for(auto i = P.begin(); i != P.end(); ++i){
 		flag = set_local((*i),p1,p2);
 		if(flag==1){
@@ -154,8 +144,8 @@ void find_left_set(vector<Point> P, vector<Point>& S, Point p1, Point p2){
 /*-------------------------------------------------------------*/
 
 
-
 /*-------------------- The QuickHull Algorithm Functions --------------------*/
+/*---------------------------- see reference (0) ----------------------------*/
 void find_hull(vector<Point>& CH, vector<Point>S, Point p1, Point p2){
 	//creates two regions
 	vector<Point> S1,S2;
@@ -207,14 +197,10 @@ void quick_hull(vector<Point>& CH, vector<Point> P){
 /*-------------------------------------------------------------*/
 
 
-
-
-
 int main(int argc, char *argv[]){
-
 	//the input
 	vector<Point> input;
-	//the convex hull
+	//the convex hull (output)
 	vector<Point> convex_hull;
 
 	get_input(input);
@@ -230,5 +216,6 @@ int main(int argc, char *argv[]){
 	convex_hull.clear();
 	input.clear();
 
+	//ends program
 	return 0;
 }
