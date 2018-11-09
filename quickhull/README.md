@@ -1,13 +1,22 @@
--THE INPUT FILES MUST HAVE THE FOLLOWING CONFIG:
-  <double><space_character><double><endl>
+-The input files must have the following config (ignore the "_"):
+  _double_space-character_double_endl_
 
--HOW TO COMPILE NAD RUN IT PROPERLY ON C++ (LINUX BASH):
+-How to compile and run it on C++ (LINUX BASH):
 	(make sure your compiller has the required C++ version)
-	>> g++ filename.cpp -o executablename
-	>> ./executablename <inputfile.in >outputfile.out
+	# g++ filename.cpp -o executablename
+	# ./executablename <inputfile.in >outputfile.out
 
--THE VERSION OF C++ NEEDED WILL BE ON THE SOURCE CODE
+-The required C++ version will be on the source code heading
 
--TAKE A LOOK ON THE INPUT AND OUTPUT TEST CASES (they might help)
+-Take a look on the input and output test cases (they might help)
+-Also: if you want to contibrute with more examples, create a pull request
+	- test1.in has only non-collinear points on the convex hull
+	- test2.in was the first test using collinear points
+	- test3.in has a lot of collinear points and a constant line on the X-axis
+	
+-The output files describe the points needed (in order of alignment) to build the convex hull
+	IMPORTANT:	not all the points that belong to the convex hull are described on the output files
+			yet, if you make the line segments in order of each point appearance all the points
+			that begings to the convex hull will be on the lines.
 
 -REFERENCES ARE IN THE SOURCE CODE
