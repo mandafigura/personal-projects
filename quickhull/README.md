@@ -1,22 +1,33 @@
--The input files must have the following config (ignore the "_"):
-  _double_space-character_double_endl_
+# QuickHull 2D Algorithm
 
--How to compile and run it on C++ (LINUX BASH):
-	(make sure your compiller has the required C++ version)
-	# g++ filename.cpp -o executablename
-	# ./executablename <inputfile.in >outputfile.out
+On this folder you have the usual quickhull algorithm implementation using C++. The required C++ version will be on the source code heading. REFERENCES ARE IN THE SOURCE CODE!!!
 
--The required C++ version will be on the source code heading
+### How to mage input files and compilation
 
--Take a look on the input and output test cases (they might help)
--Also: if you want to contibrute with more examples, create a pull request
-	- test1.in has only non-collinear points on the convex hull
-	- test2.in was the first test using collinear points
-	- test3.in has a lot of collinear points and a constant line on the X-axis
+The input files must have the following config:
+```
+<double><space-character><double><endl>
+```
+
+How to compile and run it on C++ (LINUX BASH). Make sure your compiller has the required C++ version.
+```shell
+# g++ filename.cpp -o executablename
+# ./executablename <inputfile.in >outputfile.out
+```
+## Describing the test cases
+
+### Input Files
+Take a look on the input and output test cases (they might help). Also: if you want to contibrute with more examples, create a pull request.
+
+	* [test_1.in](https://github.com/mandafigura/computer-graphics-beginner/blob/master/quickhull/test_1.in) has only non-collinear points on the convex hull
+	* [test_2.in](https://github.com/mandafigura/computer-graphics-beginner/blob/master/quickhull/test_2.in) was the first test using collinear points
+	* [test_3.in](https://github.com/mandafigura/computer-graphics-beginner/blob/master/quickhull/test_3.in) has a lot of collinear points and a constant line on the X-axis
 	
--The output files describe the points needed (in order of alignment) to build the convex hull
-	IMPORTANT:	not all the points that belong to the convex hull are described on the output files
-			yet, if you make the line segments in order of each point appearance all the points
-			that begings to the convex hull will be on the lines.
+### Output Files	
+The output files describe the points needed (in order of alignment) to build the convex hull
 
--REFERENCES ARE IN THE SOURCE CODE
+<aside class="warning">
+	Not all the points that belong to the convex hull are described on the output files.Yet, if you make the line segments in order of each point appearance then all the points that belongs to the convex hull will be on the lines.
+</aside>
+
+
