@@ -2,12 +2,18 @@
 
 On this folder you have the usual quickhull algorithm implementation using C++. The required C++ version will be on the source code heading. REFERENCES ARE IN THE SOURCE CODE!!!
 
-### How to mage input files and compilation
+## How to manage input files and compilation
+
+### Input Files
 
 The input files must have the following config:
 ```
 <double><space-character><double><endl>
 ```
+
+Your input file **must** end wit _no blank lines!_ Otherwise it might crash while running.
+
+### Compilation
 
 How to compile and run it on C++ (LINUX BASH). Make sure your compiller has the required C++ version.
 ```shell
