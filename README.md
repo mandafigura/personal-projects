@@ -1,2 +1,3 @@
-# computer-graphics-beginner
-Some basic algorithms on Computer Graphics
+# Computer Graphics: the beginning
+
+Here are some basic algorithms on Computer Graphics.
