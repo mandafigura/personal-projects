@@ -19,15 +19,13 @@ How to compile and run it on C++ (LINUX BASH). Make sure your compiller has the 
 ### Input Files
 Take a look on the input and output test cases (they might help). Also: if you want to contibrute with more examples, create a pull request.
 
-	* [test_1.in](https://github.com/mandafigura/computer-graphics-beginner/blob/master/quickhull/test_1.in) has only non-collinear points on the convex hull
-	* [test_2.in](https://github.com/mandafigura/computer-graphics-beginner/blob/master/quickhull/test_2.in) was the first test using collinear points
-	* [test_3.in](https://github.com/mandafigura/computer-graphics-beginner/blob/master/quickhull/test_3.in) has a lot of collinear points and a constant line on the X-axis
+	* test_1.in has only non-collinear points on the convex hull
+	* test_2.in was the first test using collinear points
+	* test_3.in has a lot of collinear points and a constant line on the X-axis
 	
 ### Output Files	
 The output files describe the points needed (in order of alignment) to build the convex hull
 
-<aside class="warning">
-	Not all the points that belong to the convex hull are described on the output files.Yet, if you make the line segments in order of each point appearance then all the points that belongs to the convex hull will be on the lines.
-</aside>
+> Not all the points that belong to the convex hull are described on the output files.Yet, if you make the line segments in order of each point appearance then all the points that belongs to the convex hull will be on the lines.
 
 
