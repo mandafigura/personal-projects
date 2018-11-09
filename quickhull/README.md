@@ -1,6 +1,6 @@
-# QuickHull 2D Algorithm
+# QuickHull 2D Algorithm (C++)
 
-On this folder you have the usual quickhull algorithm implementation using C++. The required C++ version will be on the source code heading. REFERENCES ARE IN THE SOURCE CODE!!!
+On this folder you have the usual [quickhull algorithm](https://github.com/mandafigura/computer-graphics-beginner/blob/master/quickhull/quickhull_2d.cpp) implementation. The required C++ version will be on the source code heading. **REFERENCES ARE IN THE SOURCE CODE!!!**
 
 ## How to manage input files and compilation
 
