@@ -32,6 +32,6 @@ Take a look on the input and output test cases (they might help). Also: if you w
 ### Output Files	
 The output files describe the points needed (in order of alignment) to build the convex hull.
 
-> Not all the points that belong to the convex hull are described on the output files. Yet, if you make the line segments in order of each point appearance then all the points that belongs to the convex hull will be on the lines.
+>IMPORTANT NOTE: Not all the Convex Hull points are described at the output files. Yet, if you make the line segments in order of each point appearance then all the points that belongs to the convex hull will be on the lines.
 
 
