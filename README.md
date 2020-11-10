@@ -1,3 +1,3 @@
-# Computer Graphics: the beginning
+# Learning some methods and algoritms
 
-Here are some basic algorithms on Computer Graphics and Computational Geometry made by an undergrad math student.
+Here are some basic algorithms on Computational Geometry and Statistics made by me in many different computer languages.
